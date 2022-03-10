@@ -7,15 +7,9 @@ public class excercise2{
         System.out.print("Enter your full name: ");
         String fullname = sc.nextLine();
         String[] partsName = fullname.split(" ");
-        for(int i = 0; i < partsName.length; i++){
-            String temp = partsName[2];
-            partsName[2] = partsName[1];
-            partsName[1] = temp;
-            if(i == 1){
-                System.out.println(partsName[i]);
-            }else{
-                System.out.print(partsName[i] + " ");
-            }
+        System.out.print(partsName[0] + " " + partsName[partsName.length - 1] + "\n");
+        for(int i = 1; i < partsName.length - 1; i++){
+            System.out.print(partsName[i] + " ");
         }
     }
 }
